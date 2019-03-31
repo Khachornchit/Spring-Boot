@@ -29,13 +29,13 @@ public class CustomerController {
 	}
 
 	@RequestMapping(method = RequestMethod.POST, value = "/customers")
-	public Customer add(@RequestBody Customer topic) {
-		return customerService.add(topic);
+	public Customer add(@RequestBody Customer customer) {
+		return customerService.add(customer);
 	}
 
 	@RequestMapping(method = RequestMethod.PUT, value = "/customers/{id}")
-	public Customer update(@RequestBody Customer topic, @PathVariable String id) {
-		return customerService.update(id, topic);
+	public Customer update(@RequestBody Customer customer, @PathVariable String id) {
+		return customerService.update(id, customer);
 	}
 
 	@RequestMapping(method = RequestMethod.DELETE, value = "/customers/{id}")

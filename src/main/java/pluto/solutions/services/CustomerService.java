@@ -24,14 +24,14 @@ public class CustomerService {
 		return customers.stream().filter(t -> t.getId().equals(id)).findFirst().get();
 	}
 
-	public Customer add(Customer topic) {
-		customers.add(topic);
-		return topic;
+	public Customer add(Customer customer) {
+		customers.add(customer);
+		return customer;
 	}
 
-	public Customer update(String id, Customer topic) {
+	public Customer update(String id, Customer customer) {
 		int index = customers.indexOf(customers.stream().filter(t -> t.getId().equals(id)).findFirst().get());
-		customers.set(index, topic);
+		customers.set(index, customer);
 		return customers.get(index);
 	}
 

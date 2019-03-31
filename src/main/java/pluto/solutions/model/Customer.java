@@ -17,23 +17,23 @@ public class Customer {
 		return firstName;
 	}
 
-	public void setFirstName(String name) {
-		this.firstName = name;
+	public void setFirstName(String firstname) {
+		this.firstName = firstname;
 	}
 
 	public String getLastName() {
 		return lastName;
 	}
 
-	public void setLastName(String description) {
-		this.lastName = description;
+	public void setLastName(String lastname) {
+		this.lastName = lastname;
 	}
 
-	public Customer(String id, String name, String description) {
+	public Customer(String id, String firstname, String lastname) {
 		super();
 		this.id = id;
-		this.firstName = name;
-		this.lastName = description;
+		this.firstName = firstname;
+		this.lastName = lastname;
 	}
 
 	public Customer() {
