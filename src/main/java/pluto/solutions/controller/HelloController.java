@@ -8,6 +8,6 @@ public class HelloController {
 	
 	@RequestMapping("/hello")
 	public String greeting() {
-		return "Hello...";
+		return "Hello... Updated Test!";
 	}
 }
