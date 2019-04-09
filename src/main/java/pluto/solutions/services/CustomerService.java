@@ -6,22 +6,22 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import pluto.solutions.model.Customer;
+import pluto.solutions.entity.Customer;
 
 @Service
 public class CustomerService {
 
 	List<Customer> customers = new LinkedList<Customer>(Arrays.asList(
-			new Customer("1", "firstname 1", "lastname 1"),
-			new Customer("2", "firstname 2", "lastname 2"), 
-			new Customer("3", "firstname 3", "lastname 3")));
+			new Customer("Mary", "Smith"),
+			new Customer("Patrica", "Johnson"), 
+			new Customer("Linda", "Williams")));
 
 	public List<Customer> get() {
 		return customers;
 	}
 
-	public Customer get(String id) {
-		return customers.stream().filter(t -> t.getId().equals(id)).findFirst().get();
+	public Customer get(int id) {
+		return customers.stream().filter(t -> t.getId() == id).findFirst().get();
 	}
 
 	public Customer add(Customer customer) {
@@ -29,14 +29,14 @@ public class CustomerService {
 		return customer;
 	}
 
-	public Customer update(String id, Customer customer) {
-		int index = customers.indexOf(customers.stream().filter(t -> t.getId().equals(id)).findFirst().get());
+	public Customer update(int id, Customer customer) {
+		int index = customers.indexOf(customers.stream().filter(t -> t.getId() == id).findFirst().get());
 		customers.set(index, customer);
 		return customers.get(index);
 	}
 
-	public void delete(String id) {
-		int index = customers.indexOf(customers.stream().filter(t -> t.getId().equals(id)).findFirst().get());
+	public void delete(int id) {
+		int index = customers.indexOf(customers.stream().filter(t -> t.getId() == id).findFirst().get());
 		customers.remove(index);
 	}
 }

@@ -1,15 +1,28 @@
-package pluto.solutions.model;
+package pluto.solutions.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Customer {
-	private String id;
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "customer_id")
+	private int id;
+	
 	private String firstName;
+	
 	private String lastName;
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -29,9 +42,8 @@ public class Customer {
 		this.lastName = lastname;
 	}
 
-	public Customer(String id, String firstname, String lastname) {
+	public Customer(String firstname, String lastname) {
 		super();
-		this.id = id;
 		this.firstName = firstname;
 		this.lastName = lastname;
 	}
