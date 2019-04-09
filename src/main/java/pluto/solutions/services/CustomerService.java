@@ -12,9 +12,9 @@ import pluto.solutions.entity.Customer;
 public class CustomerService {
 
 	List<Customer> customers = new LinkedList<Customer>(Arrays.asList(
-			new Customer("Mary", "Smith"),
-			new Customer("Patrica", "Johnson"), 
-			new Customer("Linda", "Williams")));
+			new Customer(1, "Mary", "Smith"),
+			new Customer(2, "Patrica", "Johnson"), 
+			new Customer(3, "Linda", "Williams")));
 
 	public List<Customer> get() {
 		return customers;
