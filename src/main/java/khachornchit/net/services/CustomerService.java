@@ -1,4 +1,4 @@
-package pluto.solutions.services;
+package khachornchit.net.services;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import pluto.solutions.entity.Customer;
+import khachornchit.net.entity.Customer;
 
 @Service
 public class CustomerService {

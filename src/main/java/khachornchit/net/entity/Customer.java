@@ -1,4 +1,4 @@
-package pluto.solutions.entity;
+package khachornchit.net.entity;
 
 public class Customer {
 
