@@ -1,4 +1,4 @@
-package khachornchit.net.services;
+package springboot.services;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import khachornchit.net.entity.Customer;
+import springboot.entity.Customer;
 
 @Service
 public class CustomerService {

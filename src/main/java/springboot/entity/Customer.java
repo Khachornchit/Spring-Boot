@@ -1,4 +1,4 @@
-package khachornchit.net.entity;
+package springboot.entity;
 
 public class Customer {
 

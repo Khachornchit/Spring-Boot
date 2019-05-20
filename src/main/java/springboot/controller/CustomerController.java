@@ -1,4 +1,4 @@
-package khachornchit.net.controller;
+package springboot.controller;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import khachornchit.net.entity.Customer;
-import khachornchit.net.services.CustomerService;
+import springboot.entity.Customer;
+import springboot.services.CustomerService;
 
 @RestController
 public class CustomerController {
