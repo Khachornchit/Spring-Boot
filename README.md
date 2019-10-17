@@ -6,7 +6,7 @@ This is a sample project of using Spring Boot to develop backend RESTful API fun
 
 ## Stack Technology
 * Java, Spring Boot
-Travis CI | Open Source CICD Integration
+* Travis CI | Open Source CICD Integration
 
 ## CRUD
 * POST /customers
