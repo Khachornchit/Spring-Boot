@@ -3,3 +3,8 @@ jdk:
   - openjdk8
 
 script: mvn clean install
+
+jobs:
+  include:
+    - stage: Test
+      script: mvn clean test
