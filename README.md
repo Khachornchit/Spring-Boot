@@ -6,9 +6,12 @@ Spring Boot is an open source Java-based framework used to create a micro Servic
 
 This is a sample project of using Spring Boot to develop backend RESTful API function.
 
-## Stack Technology
+## Technology Stack
 * Java, Spring Boot
 * Travis CI | Open Source CICD Integration
+
+# REST API Endpoint
+* http://localhost:8080/
 
 ## CRUD
 * POST /customers
