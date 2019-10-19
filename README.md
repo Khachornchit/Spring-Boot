@@ -26,3 +26,6 @@ This is a sample project of using Spring Boot to develop backend RESTful API fun
 * GET /customers/{id}
 * PUT /customers/{id}
 * DELETE /customers/{id}
+
+## Miscellaneous
+* git update-index --chmod=+x gradlew
