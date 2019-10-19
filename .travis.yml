@@ -5,5 +5,8 @@ os: linux
 dist: trusty
 jdk: oraclejdk8
 
-script:
-  - ./gradlew build --scan -s
+jobs:
+  include:
+    - stage: build
+      before_script: chmod +x gradlew
+      script: ./gradlew build --scan -s
