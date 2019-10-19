@@ -16,6 +16,11 @@ repositories {
     }
 }
 
+buildScan {
+    termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+    termsOfServiceAgree = 'yes'
+}
+
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web:2.2.0.RELEASE'
     compile 'org.springframework.boot:spring-boot-starter-actuator:2.2.0.RELEASE'
