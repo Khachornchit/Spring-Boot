@@ -12,8 +12,8 @@ This is a sample project of using Spring Boot and Gradle to develop a simple bac
 * Travis CI
 
 ## Pre-requires
-* Install (JDK 8)[https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html]
-* Install (Gradle)[https://gradle.org/]
+* Install [JDK 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+* Install [Gradle][https://gradle.org/]
 
 ## Getting started
 * Clone the respository
@@ -28,7 +28,8 @@ cd Java-Spring-Boot
 ```
 
 ## REST API Endpoint
-* http://localhost:8080/
+* [API Endpoint](http://localhost:8080/)
+* [JSON /customers](http://localhost:8080/customers)
 
 ## CRUD
 * POST /customers
