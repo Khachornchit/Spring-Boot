@@ -4,20 +4,30 @@
 
 Spring Boot is an open source Java-based framework used to create a micro Service. Most Spring Boot applications need very little Spring configuration. Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
 
-This is a sample project of using Spring Boot to develop backend RESTful API function.
+This is a sample project of using Spring Boot and Gradle to develop a simple backend RESTful API function.
 
 ## Technology Stack
 * Java, Spring Boot, RESTful API
 * Gradle
-* Travis CI | CICD Integration
+* Travis CI
 
-## Setup Guide
-* git clone git@github.com:Khachornchit/Java-Spring-Boot.git
-* cd Java-Spring-Boot
-* ./gradlew.bat build
-* ./gradlew.bat bootRun
+## Pre-requires
+* Install (JDK 8)[https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html]
+* Install (Gradle)[https://gradle.org/]
 
-# REST API Endpoint
+## Getting started
+* Clone the respository
+```
+git clone git@github.com:Khachornchit/Java-Spring-Boot.git
+```
+* Build and run the project
+```
+cd Java-Spring-Boot
+./gradlew build
+./gradlew bootRun
+```
+
+## REST API Endpoint
 * http://localhost:8080/
 
 ## CRUD
