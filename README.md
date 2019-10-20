@@ -13,7 +13,7 @@ This is a sample project of using Spring Boot and Gradle to develop a simple bac
 
 ## Pre-requires
 * Install [JDK 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-* Install [Gradle][https://gradle.org/]
+* Install [Gradle](https://gradle.org/)
 
 ## Getting started
 * Clone the respository
