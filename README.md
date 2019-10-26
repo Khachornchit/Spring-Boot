@@ -1,10 +1,7 @@
 [![Build Status](https://travis-ci.org/Khachornchit/Java-Spring-Boot.svg?branch=master)](https://travis-ci.org/Khachornchit/Java-Spring-Boot) [![CircleCI](https://circleci.com/gh/khachornchit/Java-Spring-Boot.svg?style=svg)](https://circleci.com/gh/khachornchit/Java-Spring-Boot)
 
 # Spring Boot
-
-Spring Boot is an open source Java-based framework used to create a micro Service. Most Spring Boot applications need very little Spring configuration. Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
-
-This is a sample project of using Spring Boot and Gradle to develop a simple backend RESTful API function.
+It is a sample project of using Spring Boot and Gradle to develop a simple backend RESTful API function. Spring Boot is an open source Java-based framework used to create a micro Service. Most Spring Boot applications need very little Spring configuration. Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
 
 ## Technology Stack
 * Java, Spring Boot, RESTful API
