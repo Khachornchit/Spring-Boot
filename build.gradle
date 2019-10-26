@@ -4,6 +4,7 @@
 
 plugins {
     id 'java'
+    id 'eclipse'
     id 'maven-publish'
     id 'org.springframework.boot' version '2.2.0.RELEASE'
     id 'war'

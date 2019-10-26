@@ -23,8 +23,8 @@ git clone git@github.com:Khachornchit/Java-Spring-Boot.git
 * Build and run the project
 ```
 cd Java-Spring-Boot
-./gradlew build
-./gradlew bootRun
+./gradlew build --scan
+./gradlew bootRun --scan
 ```
 
 ## REST API Endpoint
