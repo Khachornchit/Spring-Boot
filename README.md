@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Khachornchit/Java-Spring-Boot.svg?branch=master)](https://travis-ci.org/Khachornchit/Java-Spring-Boot)
+[![Build Status](https://travis-ci.org/Khachornchit/Java-Spring-Boot.svg?branch=master)](https://travis-ci.org/Khachornchit/Java-Spring-Boot) [![CircleCI](https://circleci.com/gh/khachornchit/Java-Spring-Boot.svg?style=svg)](https://circleci.com/gh/khachornchit/Java-Spring-Boot)
 
 # Spring Boot
 
