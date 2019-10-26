@@ -9,7 +9,6 @@ This is a sample project of using Spring Boot and Gradle to develop a simple bac
 ## Technology Stack
 * Java, Spring Boot, RESTful API
 * Gradle
-* CICD Integration
 
 ## Pre-requires
 * Install [JDK 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
