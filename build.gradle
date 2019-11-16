@@ -6,8 +6,28 @@ plugins {
     id 'java'
     id 'eclipse'
     id 'maven-publish'
-    id 'org.springframework.boot' version '2.2.0.RELEASE'
+    id 'com.gradle.build-scan' version '2.1'
+	id 'org.springframework.boot' version '2.2.1.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
     id 'war'
+}
+
+task onSync {
+	doLast {
+		println 'Eclipse: Gradle > Refresh Gradle Project'
+	}
+}
+
+task onBuild {
+	doLast {
+		println 'Eclipse: Gradle > Build Automatically (on save)'
+	}
+}
+
+eclipse {
+//	synchronizationTasks onSync
+//	autoBuildTasks onBuild
+    project.natures 'org.eclipse.buildship.core.gradleprojectnature'
 }
 
 repositories {
@@ -20,6 +40,7 @@ repositories {
 buildScan {
     termsOfServiceUrl = 'https://gradle.com/terms-of-service'
     termsOfServiceAgree = 'yes'
+    publishAlways()
 }
 
 dependencies {
@@ -27,14 +48,18 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-actuator:2.2.0.RELEASE'
     compile 'org.springframework.boot:spring-boot-starter-data-jpa:2.2.0.RELEASE'
     compile 'org.springframework.boot:spring-boot-devtools:2.2.0.RELEASE'
+    compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
     runtime 'org.apache.derby:derby:10.14.2.0'
     testCompile 'org.springframework.boot:spring-boot-starter-test:2.2.0.RELEASE'
     providedCompile 'org.springframework.boot:spring-boot-starter-tomcat:2.2.0.RELEASE'
 }
 
-group = 'khachornchit.net.javaspringboot'
+group = 'net.putfirstthingsfirst'
 version = '0.0.1-SNAPSHOT'
+
 sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
 
 publishing {
     publications {
@@ -46,4 +71,9 @@ publishing {
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
+}
+
+wrapper{
+    gradleVersion = '5.6.3'
+    distributionType = Wrapper.DistributionType.BIN
 }
