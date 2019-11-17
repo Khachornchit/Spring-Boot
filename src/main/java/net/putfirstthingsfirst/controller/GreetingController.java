@@ -1,10 +1,10 @@
-package net.putfirstthingsfirst.source;
+package net.putfirstthingsfirst.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Greeting {
+public class GreetingController {
 	
 	@RequestMapping("/")
 	public String get() {
