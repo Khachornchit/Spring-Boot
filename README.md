@@ -14,13 +14,13 @@ Java development using Spring Boot framework and Gradle for RESTful API developm
 
 ## Getting started
 
-** Clone the repository **
+**Clone the repository**
 
 ```txt
 git clone git@github.com:khachornchit/java-spring-boot.git
 ```
 
-** Build and run the project **
+**Build and run the project**
 
 ```txt
 cd java-spring-boot
